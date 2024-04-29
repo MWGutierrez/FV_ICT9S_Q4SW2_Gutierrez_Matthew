@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"/>
+	<title>Q4 Seatwork 2</title>
+
+	<style>
+		body{
+			background-color: #ADD8E6;
+			background-image: url('https://i.pinimg.com/originals/57/91/b6/5791b67a5c63cf37264e6f0e8a99270c.png');
+			background-repeat: no-repeat;
+			background-position: center top;
+		}
+		#num1, #num2{
+			font-size: 20px;
+			font-family: Century Gothic;
+		}
+	</style>
+
+</head>
+<body>
+
+<center>
+
+		<br><br><br>
+
+	<form class="form-group">
+		<div class="col-md-6">
+		<label id="num1">Enter the value for X</label>
+			<input type="number" class="form-control" id="input1" placeholder="Enter here">	
+		<label id="num2">Enter the value for Y</label>
+			<input type="number" class="form-control" id="input2" placeholder="Enter here">
+		</div>
+
+		<br><br><br>	
+
+		<button class="btn btn-success" id="button1" onclick="add()">Sum of X and Y</button>
+		<button class="btn btn-danger" id="button2" onclick="product()">Product of X and Y</button>
+
+		<br><br>
+
+		<button class="btn btn-primary" id="button3" onclick="compare()">Is X greater that Y</button>
+		<button class="btn btn-warning" id="button4" onclick="subtract()">Difference of X and Y</button>
+	</form>
+</center>
+
+	<script type="text/javascript">
+		function add(){
+			var num1 = document.getElementById("input1").value; //assign value
+			var num2 = document.getElementById("input2").value;//assign value
+			var sum = Number(num1) + Number(num2);//add the numbers
+
+			window.alert("The sum of X and Y is: " + sum);
+		}
+		function product(){
+			var num1 = document.getElementById("input1").value; //assign value
+			var num2 = document.getElementById("input2").value;//assign value
+			var product = Number(num1) * Number(num2);//add the numbers
+
+			window.alert("The product of X and Y is: " + product);
+		}
+		function compare(){
+			var num1 = document.getElementById("input1").value; //assign value
+			var num2 = document.getElementById("input2").value;//assign value
+			var compare = Number(num1) > Number(num2);//add the numbers
+
+			window.alert("Is X greater than Y: " + compare);
+		}
+		function subtract(){
+			var num1 = document.getElementById("input1").value; //assign value
+			var num2 = document.getElementById("input2").value;//assign value
+			var subtract = Number(num1) - Number(num2);//add the numbers
+
+			window.alert("The difference of X and Y is: " + subtract);
+		}
+	</script>
+
+	<br><br><br><br><br><br>
+	<center>
+		<a href="https://www.desmos.com/scientific">Click this link for an online calculator!</a>
+	</center>	
+</body>
+</html>
